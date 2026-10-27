@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ibrahima Medina Aaquil | AI & Data Science</title>
+<title>Ibrahima Medina Aaquil | Data Analyst — BI &amp; Research Data</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -104,6 +104,15 @@ section{position:relative;z-index:1;max-width:1100px;margin:0 auto;padding:6rem 
 .s-sub{color:var(--text2);font-size:1rem;max-width:540px;margin-bottom:3rem}
 
 /* CARDS */
+.cs-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin:2rem 0 1.5rem}
+.cs-stat{display:flex;flex-direction:column;gap:0.35rem;padding:1.25rem}
+.cs-num{font-family:'Syne',sans-serif;font-weight:800;font-size:1.8rem;color:var(--green);line-height:1.1}
+.cs-lbl{font-size:0.8rem;color:var(--text2);line-height:1.4}
+.cs-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.25rem}
+.cs-shot{display:block;background:var(--surface);border:1px solid var(--border);border-radius:8px;overflow:hidden;text-decoration:none;transition:border-color 0.3s,transform 0.3s}
+.cs-shot:hover{border-color:var(--border-g);transform:translateY(-3px)}
+.cs-shot img{display:block;width:100%;height:auto;background:#fff}
+.cs-shot span{display:block;padding:0.75rem 1rem;font-family:'DM Mono',monospace;font-size:0.75rem;color:var(--text2)}
 .card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:1.75rem;transition:all 0.3s;position:relative;overflow:hidden}
 .card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--green),var(--blue));opacity:0;transition:opacity 0.3s}
 .card:hover{border-color:rgba(0,245,196,0.18);transform:translateY(-4px);background:var(--surface2)}
@@ -303,6 +312,7 @@ footer span{background:linear-gradient(135deg,var(--green),var(--blue));-webkit-
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#research">Research</a></li>
+    <li><a href="#case-study">Case Study</a></li>
     <li><a href="#ai-demo">AI Demo</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#experience">Experience</a></li>
@@ -321,6 +331,7 @@ footer span{background:linear-gradient(135deg,var(--green),var(--blue));-webkit-
 <div class="mobile-menu" id="mobileMenu">
   <a href="#about" onclick="closeMenu()">About</a>
   <a href="#research" onclick="closeMenu()">Research</a>
+  <a href="#case-study" onclick="closeMenu()">Case Study</a>
   <a href="#ai-demo" onclick="closeMenu()">AI Demo</a>
   <a href="#projects" onclick="closeMenu()">Projects</a>
   <a href="#experience" onclick="closeMenu()">Experience</a>
@@ -336,11 +347,12 @@ footer span{background:linear-gradient(135deg,var(--green),var(--blue));-webkit-
     <div class="hero-badge"><span class="badge-dot"></span>Available for full-time Data &amp; AI roles — 2026</div>
     <h1 class="hero-name">Ibrahima<br><span class="outline-text">Medina Aaquil</span></h1>
     <p class="hero-tagline">
-      I build <span class="hl-g">AI systems that solve real problems</span> — from predicting traffic crashes with 88.8% recall to <span class="hl-b">automating data pipelines</span> for smarter cities and businesses.
+      I turn <span class="hl-g">messy data into clear decisions</span> — from predicting traffic crash severity with 88.8% recall to <span class="hl-b">validated dashboards and automated reporting</span> for universities and businesses.
     </p>
     <div class="hero-btns">
       <a href="#research" class="btn-p">View Research ↓</a>
-      <a href="#ai-demo" class="btn-s">See AI Demo ↓</a>
+      <a href="#case-study" class="btn-s">See Dashboard ↓</a>
+      <a href="Ibrahima_Aaquil_Resume.pdf" target="_blank" class="btn-o">Resume ↓</a>
       <a href="https://github.com/Aaquil10/data-analytics-portfolio" target="_blank" class="btn-o">GitHub →</a>
     </div>
     <div class="hero-stats">
@@ -368,8 +380,8 @@ footer span{background:linear-gradient(135deg,var(--green),var(--blue));-webkit-
   <div class="about-grid">
     <div><div class="about-logo"><span class="about-logo-text">IMA</span></div></div>
     <div class="about-text">
-      <h2 class="s-title">Data Scientist.<br>AI Builder.</h2>
-      <p>I'm <strong>Ibrahima Medina Aaquil</strong>, a Data Scientist and Machine Learning researcher based in the Washington, DC area, holding an M.S. in Data Analytics (STEM) from The Catholic University of America — plus dual bachelor's degrees in Computer Science and Financial Management from ISCA, Senegal.</p>
+      <h2 class="s-title">Data Analyst.<br>BI &amp; Research Data.</h2>
+      <p>I'm <strong>Ibrahima Medina Aaquil</strong>, a Data Analyst and researcher based in the Washington, DC area, holding an M.S. in Data Analytics (STEM) from The Catholic University of America — plus dual bachelor's degrees in Computer Science and Financial Management from ISCA.</p>
       <p>My work sits at the intersection of <strong>AI, public policy, and real-world impact</strong>. I build predictive systems, automated pipelines, and intelligent tools that turn raw data into decisions. My graduate research — recognized with a national award — applied machine learning, geospatial analysis, and causal inference to 15 years of urban crash data in Washington, DC.</p>
       <p>In an era where AI is reshaping every industry, I don't just analyze data — I <strong>build with AI</strong>: dashboards, chatbots, automation systems, and end-to-end ML pipelines for organizations that need to move faster and smarter.</p>
       <p>Currently seeking <strong>full-time roles</strong> in data analytics, business intelligence, institutional research, and AI, in both higher education and the private sector.</p>
@@ -417,6 +429,37 @@ footer span{background:linear-gradient(135deg,var(--green),var(--blue));-webkit-
       <a href="research_deepdive.html" class="btn-p" style="font-size:0.82rem;padding:0.65rem 1.4rem;white-space:nowrap">View Technical Deep Dive →</a>
     </div>
   </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CASE STUDY -->
+<section id="case-study">
+  <div class="s-label">// Featured — Case Study</div>
+  <h2 class="s-title">Institutional Research Dashboard</h2>
+  <p class="s-sub">Credential earner analysis for Prince George's Community College (FY2018–2023), prepared as an institutional research work sample. Built end to end in Power BI: data profiling, quality assurance, KPI modeling and leadership-ready findings.</p>
+
+  <div class="cs-stats">
+    <div class="card cs-stat"><span class="cs-num">4,313</span><span class="cs-lbl">Records profiled in full</span></div>
+    <div class="card cs-stat"><span class="cs-num">0</span><span class="cs-lbl">Records deleted · 18 flagged for review</span></div>
+    <div class="card cs-stat"><span class="cs-num">134</span><span class="cs-lbl">Program codes validated 1-to-1</span></div>
+    <div class="card cs-stat"><span class="cs-num">1.2 yrs</span><span class="cs-lbl">Faster median completion for transfer-in students</span></div>
+  </div>
+
+  <div class="card" style="margin-bottom:1.5rem">
+    <div style="margin-bottom:0.8rem"><span class="tag tag-b">Power BI</span><span class="tag tag-g">Power Query</span><span class="tag tag-p">DAX</span><span class="tag tag-b">Data Quality</span><span class="tag tag-g">Higher Ed KPIs</span></div>
+    <div class="proj-desc"><strong style="color:var(--text)">Approach:</strong> a three-query architecture (raw → profiling → clean) kept source data untouched, profiled every record instead of the default 1,000-row sample, standardized gender, race, transfer and program fields, and retained ambiguous records with flags instead of altering them. <strong style="color:var(--text)">Findings:</strong> credential records grew from 642 to 860; transfer-in students made up 44% of earners and finished faster (median 3.5 vs 4.7 years); time to degree ranged from 5.8 years (AA) to 7.2 years (AAT). Recommendations and limitations were documented for academic leadership.</div>
+  </div>
+
+  <div class="cs-gallery">
+    <a href="ir-1-approach.png" target="_blank" class="cs-shot"><img src="ir-1-approach.png" alt="Dataset and analytical approach page" loading="lazy"><span>1 · Analytical Approach</span></a>
+    <a href="ir-2-data-quality.png" target="_blank" class="cs-shot"><img src="ir-2-data-quality.png" alt="Data quality and preparation page" loading="lazy"><span>2 · Data Quality &amp; Preparation</span></a>
+    <a href="ir-3-executive-overview.png" target="_blank" class="cs-shot"><img src="ir-3-executive-overview.png" alt="Executive overview page" loading="lazy"><span>3 · Executive Overview</span></a>
+    <a href="ir-4-program-performance.png" target="_blank" class="cs-shot"><img src="ir-4-program-performance.png" alt="Program performance and trends page" loading="lazy"><span>4 · Program Performance &amp; Trends</span></a>
+    <a href="ir-5-student-patterns.png" target="_blank" class="cs-shot"><img src="ir-5-student-patterns.png" alt="Student characteristics and completion patterns page" loading="lazy"><span>5 · Student Completion Patterns</span></a>
+    <a href="ir-6-findings.png" target="_blank" class="cs-shot"><img src="ir-6-findings.png" alt="Key findings, recommendations and limitations page" loading="lazy"><span>6 · Findings &amp; Recommendations</span></a>
+  </div>
+  <p style="color:var(--text3);font-size:0.8rem;margin-top:1rem">Click any page to view it full size.</p>
 </section>
 
 <div class="divider"></div>
@@ -569,6 +612,16 @@ footer span{background:linear-gradient(135deg,var(--green),var(--blue));-webkit-
     </div>
 
     <div class="card">
+      <div class="proj-icon">🫀</div>
+      <div style="margin-bottom:0.8rem"><span class="tag tag-g">Python</span><span class="tag tag-b">Ensemble</span><span class="tag tag-p">Health Data</span></div>
+      <div class="proj-title">Cardiovascular Disease Prediction</div>
+      <div class="proj-desc">Analyzed about 70,000 cardiovascular health observations with demographic, clinical and lifestyle indicators. Compared logistic regression, decision trees, random forest, a multilayer perceptron and ensemble models to identify the strongest predictors of disease risk.</div>
+      <div class="proj-links">
+        <a href="https://github.com/Aaquil10/data-analytics-portfolio" target="_blank" class="proj-link blue">⌥ GitHub</a>
+      </div>
+    </div>
+
+    <div class="card">
       <div class="proj-icon">🏦</div>
       <div style="margin-bottom:0.8rem"><span class="tag tag-p">Ensemble</span><span class="tag tag-b">Python</span><span class="tag tag-g">98% Acc</span></div>
       <div class="proj-title">Loan Acceptance Prediction — OneBank</div>
@@ -691,9 +744,9 @@ footer span{background:linear-gradient(135deg,var(--green),var(--blue));-webkit-
       <div class="edu-detail">Machine Learning · AI · Statistical Modeling · Database Systems · Data Mining · Causal Inference · Geospatial Analysis · Data Visualization · Business Analytics</div>
     </div>
     <div class="card">
-      <div class="edu-school">ISCA — Institut Supérieur de Commerce et d'Administration · Senegal</div>
+      <div class="edu-school">ISCA — Institut Supérieur de Commerce et d'Administration des Affaires</div>
       <div class="edu-degree">Dual Bachelor's Degrees</div>
-      <div class="edu-meta">Saint-Louis, Senegal</div>
+      <div class="edu-meta">Oct 2016 – Aug 2023</div>
       <div class="edu-detail">
         <strong style="color:var(--green)">B.S. Computer Science</strong> · Dec 2020 – Aug 2023<br><br>
         <strong style="color:var(--blue)">B.B.A. Financial Management</strong> · Oct 2016 – Mar 2023<br><br>
@@ -710,7 +763,7 @@ footer span{background:linear-gradient(135deg,var(--green),var(--blue));-webkit-
     </div></div>
     <div class="card"><div class="award-card-inner">
       <div class="award-icon">🏅</div>
-      <div><div class="award-name">Best Research on Entrepreneurship</div><div class="award-org">ISCA, Saint-Louis, Senegal</div><div class="award-year">2023 · Undergraduate research award</div></div>
+      <div><div class="award-name">Best Research on Entrepreneurship</div><div class="award-org">ISCA</div><div class="award-year">2023 · Undergraduate research award</div></div>
     </div></div>
     <div class="card"><div class="award-card-inner">
       <div class="award-icon">📜</div>
@@ -769,7 +822,7 @@ footer span{background:linear-gradient(135deg,var(--green),var(--blue));-webkit-
 </div>
 
 <footer>
-  <span>Ibrahima Medina Aaquil</span> · Data Scientist & AI Builder · Washington DC · 2026
+  <span>Ibrahima Medina Aaquil</span> · Data Analyst · Washington DC · 2026
 </footer>
 
 <script>
